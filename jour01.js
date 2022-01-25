@@ -40,3 +40,12 @@ var age= 23;
 var template= `I m ${age} years old`;
 console.log(template);
 
+// Sub
+ var sub="lorem adjasht";
+ sub=sub.substring(4,5);
+ console.log(sub)
+
+ //ECHAPPEMENTS
+ var spit="bonjour";
+ spit=spit.replaceAll('o','a')
+ console.log(spit)
