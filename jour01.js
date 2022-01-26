@@ -46,6 +46,10 @@ console.log(template);
  console.log(sub)
 
  //ECHAPPEMENTS
+ 
+
+
+ //REPLACE ALL
  var spit="bonjour";
  spit=spit.replaceAll('o','a')
  console.log(spit)
