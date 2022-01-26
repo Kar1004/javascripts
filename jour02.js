@@ -21,6 +21,9 @@ console.log(rounded);
 var bis =5;
 var test= 12;
 console.log(test+bis);
+console.log(test-bis);
+console.log(test*bis);
+console.log(test%bis);
 
 //COMPARAISON
 
@@ -63,11 +66,15 @@ var password="azerty";
 if(limit<score && password.length>5){
     console.log("Everything is good");
 }
-else if (limit>score ||password.length > 5){
-    console.log("Something is good" );
+ else if (limit > score || password.length > 5){
+    console.log("Something is good");
 }
 else if (limit>score && password.length < 5){
-    console.log("Nothing is good" );
+    console.log("elol");
+}
+
+else{
+    console.log("Nothing is good");
 }
 
 
@@ -119,5 +126,14 @@ var month="january";
 
     var roundedNumber=3.6;
 
+    if(roundedNumber>0){
+        console.log(Math.floor(roundedNumber));
+    }
+    
+    if(roundedNumber>0){
+        console.log(Math.ceil(roundedNumber));
+    }
 
+
+    
 
