@@ -7,7 +7,7 @@ console.log("la valeur de int est: " + int+"la valeur du float est :" +float);
 //convert
 
 var basic=30;
-var stringfield=basic.length;
+var stringfield=basic.toString( );
 console.log(stringfield);
 
 //## 03 - Round
@@ -65,14 +65,9 @@ var password="azerty";
 
 if(limit<score && password.length>5){
     console.log("Everything is good");
-}
- else if (limit > score || password.length > 5){
+}else if (limit > score || password.length > 5){
     console.log("Something is good");
 }
-else if (limit>score && password.length < 5){
-    console.log("elol");
-}
-
 else{
     console.log("Nothing is good");
 }
@@ -84,10 +79,12 @@ else{
 
 //⭐ Bonus 
 
+// math.floor(Math.random()*(max-min+1)+min)
+
 var min = 1;
 var max = 6;
 
-var random =Math.floor(Math.random() * (6 - 1 + 1) + 1); 
+var random =Math.floor(Math.random() * (max-min+1)+1); 
 console.log(random);
 
 
@@ -128,7 +125,9 @@ var month="january";
 
     if(roundedNumber>0){
         console.log(Math.floor(roundedNumber));
+       
     }
+   
     
     if(roundedNumber>0){
         console.log(Math.ceil(roundedNumber));

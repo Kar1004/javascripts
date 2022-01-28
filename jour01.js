@@ -46,7 +46,7 @@ console.log(template);
  console.log(sub)
 
  //ECHAPPEMENTS
- 
+ var echap='loremememeememelajihfzeuezf buév    efy ibf ife jfbéeufjneéf/njandj'
 
 
  //REPLACE ALL
