@@ -102,11 +102,15 @@ function addUp(num){
 addUp(12);
 
 //## 06 - Time
-var secondes=0;
+let secondes=0;
+let minute =0;
+let heure =0;
 function format(num){
-    if(num>0){
-        console.log( secondes=secondes.floor(num%3600));
-    }
+    
+      heure=Math.floor(num/3600);
+      minute=Math.floor((num-heure*3600)/60);
+      secondes=num-heure*3600-minute*60;
+      console.log( heure ":",minute,secondes );
 
 }
 format(3700);
