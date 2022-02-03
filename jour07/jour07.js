@@ -1,11 +1,12 @@
 
+const { log } = require("console");
 var fs = require("fs");
 fs.readFile("jour07.txt", function (err, data) {
     if (err) {
        console.error(err);
        return;
     }
- 
+
     console.log("Lecture en différé : " + data.toString());
  });
 
@@ -13,7 +14,7 @@ fs.readFile("jour07.txt", function (err, data) {
  //2
 
  let array =[1,2,3,4,5];
- 
+
  let double=array.map((arr) => arr*2);
  console.log(double);
 
@@ -62,45 +63,45 @@ let even=numbers.filter(function(eve){
         return eve;
     }
 
-    
+
 })
 console.log(even);
 
 
-//06
+06
 
 let cakes = [
-	{
-		name: "cake",
-		flavor: "vanilla",
-		status: "available"
-	},
-	{
-		name: "brownie",
-		flavor: "chocolate",
-		status: "available"
-	},
-	{
-		name: "pie",
-		flavor: "strawberry",
-		status: "available"
-	},
-	{
-		name: "muffin",
-		flavor: "pistachio",
-		status: "available"
-	},
-	{
-		name: "donut",
-		flavor: "chocolate",
-		status: "available"
-	},
-] 
+    {
+        name: "cake",
+        flavor: "vanilla",
+        status: "available"
+    },
+    {
+        name: "brownie",
+        flavor: "chocolate",
+        status: "available"
+    },
+    {
+        name: "pie",
+        flavor: "strawberry",
+        status: "available"
+    },
+    {
+        name: "muffin",
+        flavor: "pistachio",
+        status: "available"
+    },
+    {
+        name: "donut",
+        flavor: "chocolate",
+        status: "available"
+    },
+]
 
 
-let stat = cakes.map(function(sta){
-    if(  sta.status === "available" && sta.flavor==="chocolate"){
-      console.log(sta.status="sold out");
+let stat = cakes.map(function (sta) {
+    if (sta.status === "available" && sta.flavor === "chocolate") {
+        sta.status = "sold out";
 
     }
     return sta
@@ -108,15 +109,7 @@ let stat = cakes.map(function(sta){
 
 console.log(stat);
 
-let choco=stat.filter(function(choc)
-{
-     return choc.status="sold out";   
-}
-)
+let choco = stat.filter(choc => choc.status !== "available")
 
-if (choco.status=== "sold out"){
-    console.log(choco);
-    
-}
+console.log(choco);
 
-    
