@@ -1,3 +1,5 @@
+const { locale } = require("moment");
+
 function sortLetters(letters) {
 
     var lettertab = [];
@@ -18,14 +20,59 @@ sortLetters('konexio')
 
 function countEach(x , o) {
 
-    if(x.length === o.length )
-    {
-        console.log(true);
-    }
-    else{
-        console.log(false);
-    }
+
+    
+   
+
     
 }
 
-countEach("xxxooo")
+
+
+countEach("xxxoo")
+
+
+//03
+ 
+
+function checkPal( word) {
+
+    const WordR=word.split('').reverse().join('');
+
+    if (word==WordR) {
+        console.log(word + ' is palindrome.');
+    }
+    else {
+        console.log(word + ' is not palindrome.'+' '+WordR);
+    }
+}
+
+checkPal("JELLY");
+
+//04
+
+function swap(Lword) {
+let fwor =[];   
+   
+   for( i=0 ; i<Lword.length ; i++){
+    let word = Lword.split("");
+    if (word[i].toLowerCase()==word[i]) {
+        let low=word[i].toUpperCase()
+        fwor.push(low)
+    }
+
+    if (word[i].toUpperCase()==word[i]) {
+        let up=word[i].toLowerCase()
+        fwor.push(up)
+    }
+
+   
+   
+   }
+   console.log(fwor.join("")) ;
+    
+
+
+    
+}
+swap('Lost in city and Lol')
